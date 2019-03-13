@@ -1,7 +1,10 @@
 import useWindowScrollPosition from '@rehooks/window-scroll-position';
 
 export function useScrolled() {
-  const position = useWindowScrollPosition();
+  if (typeof window !== 'undefined') {
+    const position = useWindowScrollPosition();
+    return position.y > 40;
+  }
 
-  return position.y > 40;
+  return false;
 }

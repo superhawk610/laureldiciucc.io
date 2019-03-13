@@ -8,6 +8,7 @@ module.exports = {
       resolve: 'gatsby-source-prismic',
       options: {
         repositoryName: 'laureldiciuccio',
+        // FIXME: pull this from the environment
         accessToken:
           'MC5YSWtRLVJFQUFILXBCV1pR.Wu-_ve-_ve-_ve-_ve-_vUpJVe-_ve-_ve-_ve-_ve-_ve-_vV_vv73vv702Yh_vv70e77-977-977-9KO-_vRrvv70x77-9',
         // linkResolver: ({ node, key, value }) => doc => {
