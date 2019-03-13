@@ -6,19 +6,34 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "cross-env GATSBY_GRAPHQL_IDE=playground gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
+    "@reach/router": "^1.2.1",
+    "@rehooks/window-scroll-position": "https://github.com/rehooks/window-scroll-position",
     "gatsby": "^2.1.31",
+    "normalize.css": "^8.0.1",
     "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react-dom": "npm:@hot-loader/react-dom",
+    "react-icons-kit": "^1.2.1"
   },
   "devDependencies": {
-    "prettier": "^1.16.4"
+    "cross-env": "^5.2.0",
+    "gatsby-image": "^2.0.33",
+    "gatsby-plugin-favicon": "^3.1.5",
+    "gatsby-plugin-sass": "^2.0.11",
+    "gatsby-plugin-sharp": "^2.0.28",
+    "gatsby-plugin-typescript": "^2.0.11",
+    "gatsby-source-filesystem": "^2.0.24",
+    "gatsby-source-prismic": "^2.3.0-alpha.3",
+    "gatsby-transformer-sharp": "^2.1.17",
+    "node-sass": "^4.11.0",
+    "prettier": "^1.16.4",
+    "typescript": "^3.3.3333"
   },
   "repository": {
     "type": "git",

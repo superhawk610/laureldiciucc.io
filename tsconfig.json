@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "lib": ["es2015", "es2015.iterable", "es2017", "dom"],
+    "strict": true,
+    "target": "es2017",
+    "jsx": "react",
+    "noImplicitAny": false
+  },
+  "exclude": ["node_modules"]
+}
